@@ -24,14 +24,22 @@
   border-bottom: 7px solid #ffd180;
 }
 
-.froggertile {
+#froggerjpg.froggertile {
   background: url(../img/Frogger.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 700px;
-  border-top: 7px solid #ffd180;
-  border-bottom: 7px solid #ffd180;
+  height: 300px;
+  border: 7px solid #ffffff;
+}
+
+#twitchjpg.froggertile {
+  background: url(../img/twitch.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  border: 7px solid #ffffff;
 }
 
 .loginSection {
@@ -66,3 +74,13 @@
   padding: 0;
 }
 
+.card-image {
+  width: auto;
+  overflow: hidden;
+}
+
+
+
+.card {
+  height: 450px
+}
