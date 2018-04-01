@@ -42,6 +42,15 @@
   border: 7px solid #ffffff;
 }
 
+#mainjpg {
+  background: url(../img/heading.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border: 7px solid #ffffff;
+}
+
 .loginSection {
   margin-left: 60px;
 }
