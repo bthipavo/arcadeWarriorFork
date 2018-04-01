@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arcade Warrior</title>
+	<link rel='stylesheet' href='/css/bootstrap.css' />
+	<link rel='stylesheet' href='/css/style.css' />
+  <!-- Compiled and minified CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+</head>
+<body>
+
+  <nav>
+    <div class='nav-wrapper orange lighten-1'>
+      <a href='#'><img class='arcadeLogo' src='/img/aw_logo.png'> </a>
+      <ul id='nav-mobile' class='right hide-on-sm-and-down'>
+        {{#if user}}
+          <li role='presentation'><a href='/'>DASHBOARD</a></li>
+          <li role='presentation'><a href='/users/logout'>LOGOUT</a></li>
+        {{else}}
+          <li role='presentation'><a href='/users/login'>LOGIN</a></li>
+          <li role='presentation'><a href='/users/register'>REGISTER</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class='row'>
+    <div class='fluid col-lg-12'>
+      {{#if success_msg}}
+        <div class='alert alert-success'>{{success_msg}}</div>
+      {{/if}}
+
+      {{#if error_msg}}
+        <div class='alert alert-danger'>{{error_msg}}</div>
+      {{/if}}
+
+      {{#if error}}
+        <div class='alert alert-danger'>{{error}}</div>
+      {{/if}}
+      
+      {{{body}}}
+    </div> 
+  </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js'></script>
+</body>
+</html>

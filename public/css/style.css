@@ -1,0 +1,68 @@
+.arcadeLogo {
+  margin-left: 60px;
+}
+
+#nav-mobile {
+  margin-right: 60px;
+}
+
+.banner {
+  background: url(../img/arcade_banner_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+/*  background-size: cover;
+*/  height: 100px;
+}
+
+.footer {
+  background: url(../img/arcadebg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  border-top: 7px solid #ffd180;
+  border-bottom: 7px solid #ffd180;
+}
+
+.froggertile {
+  background: url(../img/Frogger.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  border-top: 7px solid #ffd180;
+  border-bottom: 7px solid #ffd180;
+}
+
+.loginSection {
+  margin-left: 60px;
+}
+
+.registerSection {
+  margin-left: 60px;
+}
+
+.page-header {
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+#loginBtn {
+  margin-left: 53px;
+  margin-bottom: 25px;
+}
+
+#registerBtn {
+  margin-left: 53px;
+  margin-bottom: 25px;
+}
+
+.fluid {
+  padding: 0;
+}
+
