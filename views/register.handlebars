@@ -1,53 +1,93 @@
-<div class='registerSection'>
-  <div class='row'>
-    <div class='col s6'>
-      <h2 class='page-header'>Register</h2>
+<div class="container">
+<!-- MODAL TRIGGER -->
+        <a class="btn waves-effect waves-light modal-trigger" href="#modal1">Modal</a>
+        
+        <!-- MODAL -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+    <div class='registerSection'>
+      <div class='row'>
+        <div class='col s6'>
+          <h2 class='page-header'>Register</h2>
+        </div>
+      </div>
+      {{#if errors}}
+            {{#each errors}}
+              <div class='alert alert-danger'>{{msg}}</div>
+            {{/each}}
+      {{/if}}
+      <form method='post' action='/users/register'>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <i class='material-icons prefix'>assignment_ind</i>
+              <label class='active' for='name'>NAME</label>
+              <input id='name' type='text' class='form-control' name='name'>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <i class='material-icons prefix'>account_circle</i>
+              <label class='active' for='username'>USERNAME</label>
+              <input id='username' type='text' class='form-control' name='username'>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <i class='material-icons prefix'>email</i>
+              <label class='active' for='email'>EMAIL</label>
+              <input id='email' type='email' class='form-control' name='email'>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <i class='material-icons prefix'>lock</i>
+              <label class='active' for='password'>PASSWORD</label>
+              <input id='password' type='password' class='form-control' name='password'>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <i class='material-icons prefix'>enhanced_encryption</i>
+              <label class='active' for='password2'>CONFIRM PASSWORD</label>
+              <input id='password2' type='password' class='form-control' name='password2'>
+            </div>
+          </div>
+        <button id='registerBtn' type='submit' class='btn waves-effect waves-light cyan lighten-1'>Submit</button>
+      </form>
     </div>
+
   </div>
-  {{#if errors}}
-        {{#each errors}}
-          <div class='alert alert-danger'>{{msg}}</div>
-        {{/each}}
-  {{/if}}
-  <form method='post' action='/users/register'>
-      <div class='row'>
-        <div class='input-field col s6'>
-          <i class='material-icons prefix'>assignment_ind</i>
-          <label class='active' for='name'>NAME</label>
-          <input id='name' type='text' class='form-control' name='name'>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='input-field col s6'>
-          <i class='material-icons prefix'>account_circle</i>
-          <label class='active' for='username'>USERNAME</label>
-          <input id='username' type='text' class='form-control' name='username'>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='input-field col s6'>
-          <i class='material-icons prefix'>email</i>
-          <label class='active' for='email'>EMAIL</label>
-          <input id='email' type='email' class='form-control' name='email'>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='input-field col s6'>
-          <i class='material-icons prefix'>lock</i>
-          <label class='active' for='password'>PASSWORD</label>
-          <input id='password' type='password' class='form-control' name='password'>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='input-field col s6'>
-          <i class='material-icons prefix'>enhanced_encryption</i>
-          <label class='active' for='password2'>CONFIRM PASSWORD</label>
-          <input id='password2' type='password' class='form-control' name='password2'>
-        </div>
-      </div>
-    <button id='registerBtn' type='submit' class='btn waves-effect waves-light cyan lighten-1'>Submit</button>
-  </form>
+  </div>  
+
 </div>
 
 <div class='footer'></div>
 <div class='banner'></div>
+
+   <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-button').dropdown({
+                constrainWidth: false,
+                hover: true,
+                belowOrigin: true,
+                alignment: 'left'
+            });
+
+            // JAVASCRIPT START HERE //
+            $('.modal').modal({
+                dismissible: true,
+                inDuration: 300,
+                outDuration: 200,
+                ready: function(modal, trigger) {
+                    console.log('Modal Opened', modal, trigger);
+
+                }
+            });
+
+
+
+        });

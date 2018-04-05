@@ -1,27 +1,34 @@
-<div class='loginSection'>
-	<form method='post' action='/users/login'>
-		<div class='row'>
-		  	<div class='col s6'>
-		  		<h2 class='page-header'>Account Login</h2>
-		  	</div>
-	  	</div>
-	  	<div class='row'>
-	  		<div class='input-field col s6'>
-				<i class='material-icons prefix'>account_circle</i>
-				<label class='active' for='username'>USERNAME</label>
-				<input id='username' type='text' class='form-control' name='username'>
-			</div>
+{{!-- <!-- MODAL TRIGGER -->
+        <a class="btn waves-effect waves-light modal-trigger" href="#modal1">Modal</a> --}}
+
+<!-- MODAL -->
+{{!-- <div id="modal1" class="modal">
+	 <div class="modal-content"> --}}
+		<div id-"modal1" class='loginSection'>
+			<form method='post' action='/users/login'>
+				<div class='row'>
+					<div class='col s6'>
+						<h2 class='page-header'>Account Login</h2>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='input-field col s6'>
+						<i class='material-icons prefix'>account_circle</i>
+						<label class='active' for='username'>USERNAME</label>
+						<input id='username' type='text' class='form-control' name='username'>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='input-field col s6'>
+						<i class='material-icons prefix'>lock</i>
+						<label class='active' for='password'>PASSWORD</label>
+						<input id='password' type='password' class='form-control' name='password'>
+					</div>
+				</div>
+				<button id='loginBtn' type='submit' class='btn waves-effect waves-light cyan lighten-1'>Submit</button>
+			</form>
 		</div>
-		<div class='row'>
-	  		<div class='input-field col s6'>
-				<i class='material-icons prefix'>lock</i>
-				<label class='active' for='password'>PASSWORD</label>
-				<input id='password' type='password' class='form-control' name='password'>
-			</div>
-		</div>
-		<button id='loginBtn' type='submit' class='btn waves-effect waves-light cyan lighten-1'>Submit</button>
-	</form>
-</div>
+
 
 <div class='footer'></div>
 <div class='banner'></div>

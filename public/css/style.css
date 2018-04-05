@@ -1,95 +1,122 @@
 .arcadeLogo {
-  margin-left: 60px;
+    margin-left: 60px;
 }
 
 #nav-mobile {
-  margin-right: 60px;
+    margin-right: 60px;
 }
 
 .banner {
-  background: url(../img/arcade_banner_2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-/*  background-size: cover;
-*/  height: 100px;
+    background: url(../img/arcade_banner_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*  background-size: cover;
+*/
+    height: 100px;
+}
+
+h1#exp {
+    font-size: 2.2rem;
+    line-height: 292%;
+    margin: 2.8rem 0 1.68rem 0;
+    color: #ffffff;
 }
 
 .footer {
-  background: url(../img/arcadebg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 700px;
-  border-top: 7px solid #ffd180;
-  border-bottom: 7px solid #ffd180;
+    background: url(../img/arcadebg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    border-top: 7px solid #ffd180;
+    border-bottom: 7px solid #ffd180;
 }
 
 #froggerjpg.froggertile {
-  background: url(../img/Frogger.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  border: 7px solid #ffffff;
+    background: url(../img/Frogger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border: 7px solid #ffffff;
+}
+
+#froggerjpg {
+    background: url(../img/Frogger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+    border: 7px solid #ffffff;
 }
 
 #twitchjpg.froggertile {
-  background: url(../img/twitch.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  border: 7px solid #ffffff;
+    background: url(../img/twitch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border: 7px solid #ffffff;
+}
+
+#twitchjpg {
+    background: url(../img/twitch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+    border: 7px solid #ffffff;
 }
 
 #mainjpg {
-  background: url(../img/heading.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  border: 7px solid #ffffff;
+    background: url(../img/heading.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    border: 7px solid #ffffff;
 }
 
 .loginSection {
-  margin-left: 60px;
+    margin-left: 60px;
 }
 
 .registerSection {
-  margin-left: 60px;
+    margin-left: 60px;
 }
 
 .page-header {
-  margin-bottom: 0;
-  margin-top: 15px;
-  font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 25px;
 }
 
 .row {
-  margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 #loginBtn {
-  margin-left: 53px;
-  margin-bottom: 25px;
+    margin-left: 53px;
+    margin-bottom: 25px;
 }
 
 #registerBtn {
-  margin-left: 53px;
-  margin-bottom: 25px;
+    margin-left: 53px;
+    margin-bottom: 25px;
 }
 
 .fluid {
-  padding: 0;
+    padding: 0;
 }
 
 .card-image {
-  width: auto;
-  overflow: hidden;
+    width: auto;
+    overflow: hidden;
 }
 
-
-
 .card {
-  height: 450px
+    height: 450px
 }
