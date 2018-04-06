@@ -8,16 +8,7 @@ var User = require('../models/user');
 router.get('/register', function(req, res) {
     res.render('register');
 });
-// JAVASCRIPT START HERE //
-$('.modal').modal({
-    dismissible: true,
-    inDuration: 300,
-    outDuration: 200,
-    ready: function(modal, trigger) {
-        console.log('Modal Opened', modal, trigger);
 
-    }
-});
 
 // Login
 router.get('/login', function(req, res) {
