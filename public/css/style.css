@@ -48,7 +48,7 @@
     }
     
     #mainjpg {
-        background: url(../img/heading.png);
+        background: url(https://i.imgur.com/obojRZ5.gif);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -149,4 +149,8 @@
         color: #ffa726;
         text-align: center;
         text-shadow: 2px 2px #222222;
+    }
+
+    .indexpage {
+        background-color: white;
     }
