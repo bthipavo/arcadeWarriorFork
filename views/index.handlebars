@@ -17,14 +17,14 @@
 			<div class="col s12 m4 l4 hoverable froggertile" id="twitchjpg">
 				<div class="row">
 					<div>
-						<a class="waves-effect waves-light btn-small"><i class="material-icons right">cloud</i>Watch a Game</a>
+						<a class="waves-effect waves-light btn-small" href="/users/twitch"><i class="material-icons right">cloud</i>Watch a Game</a>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 m4 l4 hoverable froggertile" id="galagajpg">
 				<div class="row">
 					<div>
-						<a class="waves-effect waves-light btn-small" href="/users/mario"><i class="material-icons right">cloud</i>Play!</a>
+						<a class="waves-effect waves-light btn-small" href="/users/galaga"><i class="material-icons right">cloud</i>Play!</a>
 					</div>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 
    <!--CAROUSEL -->
 	<div class="container indexpage">
-        <div class="carousel carousel-slider" data-indicators="true">
+        <div class="carousel" data-indicators="true">
 			<h3 id="new-releases">New Releases</h3>
             <a class="carousel-item" href="#one!">
                 <img src="img/Frogger.jpg">
@@ -57,7 +57,7 @@
 	
 
 
-		<div class="row"></div>
+		<div class="row">
 		<div class="banner"></div>
 
 
@@ -68,10 +68,22 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
-          
+            $('.dropdown-button').dropdown({
+                constrainWidth: false,
+                hover: true,
+                belowOrigin: true,
+                alignment: 'left'
+            });
             // JAVASCRIPT START HERE //
-            $('.carousel').carousel();
+            $('.carousel').carousel()
+                $('.carousel-slider').carousel ({
+                 fullWidth: true
+                 });
 
-        });	
+
+        });
+
+
+		
     </script>
 	</div>

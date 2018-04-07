@@ -23,6 +23,10 @@ router.get('/mario', function(req, res){
 	res.render('mario');
 });
 
+router.get('/galaga', function(req, res){
+	res.render('galaga');
+});
+
 // Register User
 router.post('/register', function(req, res){
 	var name = req.body.name;
