@@ -19,6 +19,10 @@ router.get('/twitch', function(req, res){
 	res.render('twitch');
 });
 
+router.get('/mario', function(req, res){
+	res.render('mario');
+});
+
 // Register User
 router.post('/register', function(req, res){
 	var name = req.body.name;
