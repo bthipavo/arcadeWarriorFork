@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+p {
+  color: white;
+}
+#img-header {
+  height: 75px;
+}
+#header {
+  color: white;
+  font-size: 30px;
+  font-family: lobster;
+  background-color: rgb(100, 65, 165);
+  margin-bottom: 10px;
+}
+.preview {
+  float: left;
+  width: 50px;
+}
+.container {
+  background-color: rgb(30, 26, 36);
+}
+.streams {
+  color: white;
+}
+#streams-online .stream {
+  transition: all 0.5s;
+}
+#streams-offline .stream {
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+#streams-offline .stream:hover {
+  background-color: rgba(100, 65, 165, 0.199);
+  filter: none;
+}
+.streams .stream:hover {
+  background-color: rgba(100, 65, 165, 0.199);
+}
+.redirect {
+  color: white;
+}
+.redirect:hover {
+  color: white;
+  text-decoration: none;
+}
+li {
+  float: right;
+  color: red;
+}
+.status {
+  float: right;
+  color: rgba(255, 255, 255, 0.377);
+}
+.channel-name {
+  color: rgba(255, 255, 255, 0.712);
+}
+.game {
+  color: rgba(255, 255, 255, 0.253);
+  font-size: 14px;
+}
+.red-dot {
+  width: 12px;
+}
+.button {
+  cursor: pointer;
+  color: rgba(255, 255, 255);
+  background-color: rgba(100, 65, 165);
+  border: none;
+  transition: all 1s;
+}
+#btn-offline:hover {
+  background-color: rgba(233, 92, 92, 0.384);
+  color: black;
+}
+#btn-online:hover {
+  background-color: rgba(69, 196, 69, 0.37);
+  color: black;
+}
+#btn-all:hover {
+  background-color: rgba(80, 78, 194, 0.384);
+  color: black;
+}
+#footer {
+  padding: 10px;
+  background-color: rgba(100, 65, 165, 0.123);
+  color: rgba(224, 224, 224, 0.315);
+  font-family: "Lobster", Times, serif;
+}
