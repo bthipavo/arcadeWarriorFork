@@ -5,6 +5,12 @@
 	<link rel='stylesheet' href='/css/bootstrap.css' />
 	<link rel='stylesheet' href='/css/style.css' />
   <!-- Compiled and minified CSS -->
+
+  <!-- Vladimirs links -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/vlad.css' />
+  <!-- End of vlad's links -->
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 </head>
@@ -16,6 +22,7 @@
       <ul id='nav-mobile' class='right hide-on-sm-and-down'>
         {{#if user}}
           <li role='presentation'><a href='/'>DASHBOARD</a></li>
+          <li role='presentation'><a href='/users/twitch'>TWITCH</a></li>
           <li role='presentation'><a href='/users/logout'>LOGOUT</a></li>
         {{else}}
           <li role='presentation'><a href='/users/login'>LOGIN</a></li>
@@ -46,5 +53,9 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js'></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script  src="/js/twitch.js"></script>
 </body>
 </html>
